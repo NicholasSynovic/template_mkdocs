@@ -10,10 +10,9 @@ convert API docstrings into API documentation.
 
 In addition to writing static site content, this repository contains
 [pre-commit](https://pre-commit.com/) hooks, config files, a simple "Hello
-World" website, Makefile directives to build the site into HTML and PDF files,
-and a GitHub Action workflow to deploy the site onto GitHub pages. All
-dependencies are listed in the `pyproject.toml` file in the root of the
-directory.
+World" website, Makefile directives to build the site into HTML files, and a
+GitHub Action workflow to deploy the site onto GitHub pages. All dependencies
+are listed in the `pyproject.toml` file in the root of the directory.
 
 ## How To Develop
 
@@ -39,14 +38,9 @@ The following config files can be found in the root of the directory:
 ## How To Build
 
 - `make build-html` to build the HTML version of the site, or
-- `make build-pdf` to build the PDF verison of the site.
 
 ### HTML
 
 The HTML content of the site is stored in the root level `html` directory.
-
-### PDF
-
-The PDF content of the site is stored in the root level `pdf` directory.
 
 ## How To Deploy
