@@ -44,3 +44,9 @@ The following config files can be found in the root of the directory:
 The HTML content of the site is stored in the root level `html` directory.
 
 ## How To Deploy
+
+`make deploy-gh` will commit the current project root-level `html` directory to
+the root of a `gh-pages` branch.
+
+Once executed, in your GitHub project, confgure GitHub Pages to read from the
+root of the gh-pages branch.

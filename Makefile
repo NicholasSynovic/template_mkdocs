@@ -3,10 +3,6 @@ build-html:
 	poetry version --short > src/_version
 	mkdocs build --clean --site-dir html
 
-build-pdf:
-	git --no-pager tag | tail -n 1 | xargs -I % poetry version %
-	poetry version --short > src/_version
-
 create-dev:
 	pre-commit install
 	pre-commit autoupdate
@@ -18,3 +14,6 @@ create-dev:
 		poetry install; \
 		deactivate; \
 	)
+
+deploy-gh:
+	ghp-import --no-jekyll --push --force --remote origin --branch gh-pages html
