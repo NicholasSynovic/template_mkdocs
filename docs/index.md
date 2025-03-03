@@ -41,4 +41,12 @@ The following config files can be found in the root of the directory:
 - `make build-html` to build the HTML version of the site, or
 - `make build-pdf` to build the PDF verison of the site.
 
+### HTML
+
+The HTML content of the site is stored in the root level `html` directory.
+
+### PDF
+
+The PDF content of the site is stored in the root level `pdf` directory.
+
 ## How To Deploy

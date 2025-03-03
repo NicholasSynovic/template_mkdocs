@@ -1,4 +1,9 @@
-build:
+build-html:
+	git --no-pager tag | tail -n 1 | xargs -I % poetry version %
+	poetry version --short > src/_version
+	mkdocs build --clean --site-dir html
+
+build-pdf:
 	git --no-pager tag | tail -n 1 | xargs -I % poetry version %
 	poetry version --short > src/_version
 
