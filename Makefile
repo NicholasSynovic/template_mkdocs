@@ -1,5 +1,5 @@
 build-html:
-	git --no-pager tag | tail -n 1 | xargs -I % poetry version %
+	git --no-pager tag | rev | col | cut -d ' ' -f 1 | rev | xargs -I % poetry version %
 	poetry version --short > src/_version
 	mkdocs build --clean --site-dir html
 
